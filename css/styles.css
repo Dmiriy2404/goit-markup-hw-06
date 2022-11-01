@@ -339,6 +339,43 @@ img {
     background-color: var(--accent-color);
     fill: var(--main-white-color);
 }
+/* Клиенты */
+.clients-list {
+    display: flex;
+}
+.clients-item:hover,
+.clients-item:focus {
+    fill: var(--accent-color);
+    border-radius: 4px;
+}
+.client-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.clients-list-item:not(:last-child) {
+    margin-right: 30px;
+
+}
+.clients-icon {
+    fill: #AFB1B8;
+}
+.client-item:hover .clients-icon,
+.client-item:focus .clients-icon {
+    fill: var(--accent-color);
+}
+
+.client-item:hover,
+.client-item:focus {
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+}
+
 /* FOOTER */
 
 .footer{
@@ -398,8 +435,7 @@ img {
 .footer-address-contanier {
     margin-right: 70px;
 }
-.footer-nav-list {
-}
+
 .footer-title {
     margin-bottom: 20px;
     font-family: var(--first-font);
