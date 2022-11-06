@@ -112,8 +112,6 @@ img {
 }
 
 .header-nav-item {
-    position: relative;
-    overflow: ;
     display: flex;
 
 }
@@ -132,17 +130,7 @@ img {
 .active-page {
     color: var(--accent-color);
 }
-.active-page::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-}
+
 .header-contacts-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -228,7 +216,7 @@ img {
 .benefits-title-item{
     margin-bottom: 10px;
 
-    font-size: ;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
