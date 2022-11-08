@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Студія</title>
 </head>
+
 <body>
     <!--Шапка сайта-->
     <header class="header">
         <div class="contanier header-flex">
-            <a class="link" href="./index.html"><span class="logo-first">Web</span><span class="logo-last">Studio</span></a>
-            
+            <a class="link" href="./index.html"><span class="logo-first">Web</span><span
+                    class="logo-last">Studio</span></a>
+
             <nav class="header-nav">
                 <ul class="header-nav-lsit list">
                     <li class="header-nav-item">
@@ -35,7 +40,7 @@
                     </li>
                 </ul>
             </nav>
-            
+
             <ul class="header-contacts-lsit list">
                 <li class="header-contacts-item">
                     <a href="mailto:info@devstudio.com" class="header-mail-link link">
@@ -55,7 +60,7 @@
                 </li>
             </ul>
         </div>
-        
+
     </header>
 
     <main>
@@ -63,9 +68,22 @@
         <section class="hero">
             <div class="contanier">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero-btn btn">Замовити послугу</button>
+                <button type="button" class="hero-btn btn" data-modal-open>Замовити послугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button type="button" class="modal-btn" data-modal-close>
+                            <svg width="11" height="11">
+                                <use href="./images/sprite.svg#vector"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
-            
+
+            <!-- <div class="backdrop is-hidden">
+                <div class="modal">
+                </div>
+            </div> -->
         </section>
         <!--Плюсы-->
         <section class="benefits section">
@@ -79,7 +97,8 @@
                             </svg>
                         </div>
                         <h3 class="benefits-title-item">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="benefits-text-item">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                        <p class="benefits-text-item">Ідейні міркування, і навіть початок повсякденної роботи з
+                            формування позиції.</p>
                     </li>
                     <li class="benefits-list-item">
                         <div class="benefits-contanier-icon">
@@ -88,7 +107,8 @@
                             </svg>
                         </div>
                         <h3 class="benefits-title-item">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="benefits-text-item">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                        <p class="benefits-text-item">Завдання організації, особливо рамки і місце навчання кадрів тягне
+                            у себе.</p>
                     </li>
                     <li class="benefits-list-item">
                         <div class="benefits-contanier-icon">
@@ -97,7 +117,8 @@
                             </svg>
                         </div>
                         <h3 class="benefits-title-item">ПЛАНУВАННЯ</h3>
-                        <p class="benefits-text-item">Так само консультація з широким активом значною мірою зумовлює.</p>
+                        <p class="benefits-text-item">Так само консультація з широким активом значною мірою зумовлює.
+                        </p>
                     </li>
                     <li class="benefits-list-item">
                         <div class="benefits-contanier-icon">
@@ -106,28 +127,44 @@
                             </svg>
                         </div>
                         <h3 class="benefits-title-item">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="benefits-text-item">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                        <p class="benefits-text-item">Значимість цих проблем настільки очевидна, що реалізація планових
+                            завдань.</p>
                     </li>
                 </ul>
-            </div>   
+            </div>
         </section>
-        <!--Продукт-->
-<section class="products section">
-    <div class="contanier">
-        <h2 class="products-title">Чим ми займаємося</h2>
-        <ul class="products-title-list list">
-            <li class="products-list-item">
-                <img src="./images/workmake1.jpg" alt="Пише код" width="370" height="294">
-            </li>
-            <li class="products-list-item">
-                <img src="./images/workmake2.jpg" alt="Мобільні додатки" width="370" height="294">
-            </li>
-            <li class="products-list-item">
-                <img src="./images/workmake3.jpg" alt="Мобільні додатки" width="370" height="294">
-            </li>
-        </ul>
-    </div>
-</section>
+        <!--PRODUCTS-->
+        <section class="products section">
+            <div class="contanier">
+                <h2 class="products-title">Чим ми займаємося</h2>
+                <ul class="products-title-list list">
+                    <li class="products-list-item">
+                        <div class="thumb">
+                            <img src="./images/workmake1.jpg" alt="Пише код" width="370" height="294">
+                            <p class="lable">
+                                Десктопні додатки
+                            </p>
+                        </div>
+                    </li>
+                    <li class="products-list-item">
+                        <div class="thumb">
+                            <img src="./images/workmake2.jpg" alt="Мобільні додатки" width="370" height="294">
+                            <p class="lable">
+                                Мобільні додатки
+                            </p>
+                        </div>
+                    </li>
+                    <li class="products-list-item">
+                        <div class="thumb">
+                            <img src="./images/workmake3.jpg" alt="Мобільні додатки" width="370" height="294">
+                            <p class="lable">
+                                Дизайнерські рішення
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <!--Комадна-->
         <section class="team section">
             <div class="contanier">
@@ -335,31 +372,32 @@
             </div>
         </section>
     </main>
-    
+
     <footer class="footer">
         <div class="contanier footer-flex">
             <div class="footer-address-contanier">
-            <a class="link" href="./index.html"><span class="logo-first">Web</span><span class="footer-logo-last">Studio</span></a>
-            <address class="address">
-                <ul class="footer-nav-list list">
-                    <li class="footer-list-link">
-                        <a class="footer-address link" href="http://goo.gl/maps/QTR2mPzjSUtPzngC9" target="_blank"
-                            rel="noopener noreferrer">м. Київ, пр-т Лесі Українки,
-                            26
-                        </a>
-                    </li>
-                    <li class="footer-list-link">
-                        <a href="mailto:info@devstudio.com" class="footer-mail link">
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="footer-list-link">
-                        <a class="footer-tel link" href="tel:+380961111111">
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
-            </address>
+                <a class="link" href="./index.html"><span class="logo-first">Web</span><span
+                        class="footer-logo-last">Studio</span></a>
+                <address class="address">
+                    <ul class="footer-nav-list list">
+                        <li class="footer-list-link">
+                            <a class="footer-address link" href="http://goo.gl/maps/QTR2mPzjSUtPzngC9" target="_blank"
+                                rel="noopener noreferrer">м. Київ, пр-т Лесі Українки,
+                                26
+                            </a>
+                        </li>
+                        <li class="footer-list-link">
+                            <a href="mailto:info@devstudio.com" class="footer-mail link">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="footer-list-link">
+                            <a class="footer-tel link" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+                </address>
             </div>
             <div class="social-link-contanier">
                 <p class="footer-title">
@@ -398,5 +436,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
+
 </html>
