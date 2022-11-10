@@ -31,7 +31,6 @@ body {
 
 .link {
     text-decoration: none;
-    transition: color 250ms var(--timing-function);
 }
 
 .link:hover,
@@ -143,6 +142,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    transition: color 250ms var(--timing-function);
 }
 
 .active-page {
@@ -299,18 +299,20 @@ img {
 }
 
 .lable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     bottom: 0px;
-    right: 0px;
-    margin: 0;
-    padding: 27px 0;
+
     width: 100%;
+    height: 70px;
+
     font-weight: 700;
     line-height: 1.14;
-    text-align: center;
     text-transform: uppercase;
-    background-color: rgba(47, 48, 58, 0.8);
 
+    background-color: rgba(47, 48, 58, 0.8);
     color: var(--main-white-color);
 
 }
@@ -613,9 +615,11 @@ img {
     transition: box-shadow 250ms var(--timing-function);
 
 }
-
-.product-elements-item:hover,
-.product-elements-item:focus {
+.product-link{
+    display: block;
+}
+.product-link:hover,
+.product-link:focus {
     box-shadow: 10px 13px 11px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -636,24 +640,7 @@ img {
 
 .overlay {
     position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(33, 150, 243, 0.9);
-
-    transform: translateY(0);
-    transition: transform 250ms var(--timing-function);
-
-}
-
-.product-elements:hover .overlay {
-    transform: translatey(-100%);
-
-}
-
-.overlay p {
-    position: absolute;
+    bottom: 0;
 
     width: 100%;
     height: 100%;
@@ -664,9 +651,23 @@ img {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
-
+    
     color: var(--main-white-color);
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform 250ms var(--timing-function);
+
 }
+
+.product-link:hover .overlay,
+.product-link:focus .overlay
+ {
+    transform: translatey(0);
+
+}
+
+
 
 .webnav-btn {
     padding: 6px 22px;
