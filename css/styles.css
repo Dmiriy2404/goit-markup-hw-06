@@ -478,7 +478,7 @@ form {
 .benefits-title-item {
     margin-bottom: 10px;
 
-    font-size: ;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -633,7 +633,7 @@ form {
     border: 1px solid currentColor;
     border-radius: 4px;
     color: #AFB1B8;
-    ;
+    
 
     transition: color 250ms var(--timing-function);
 }
@@ -647,10 +647,6 @@ form {
     fill: currentColor;
 }
 
-.client-item:hover .clients-icon,
-.client-item:focus .clients-icon {
-    color: var(--accent-color);
-}
 
 .client-item:hover,
 .client-item:focus {
@@ -690,6 +686,8 @@ form {
     font-style: normal;
     line-height: 1.71;
     color: var(--footer-address-color);
+
+    transition: color 250ms var(--timing-function);
 
 }
 
@@ -827,13 +825,15 @@ form {
 
 .product-elements {
     display: flex;
+    
     width: 370px;
 
     transition: box-shadow 250ms var(--timing-function);
-
 }
+
 .product-link{
     display: block;
+    transition: box-shadow 250ms var(--timing-function);
 }
 .product-link:hover,
 .product-link:focus {
