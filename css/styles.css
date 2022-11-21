@@ -236,7 +236,8 @@ img {
 
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-input:hover {
     outline: none;
     border-color: var(--accent-color);
 }
@@ -249,7 +250,8 @@ img {
     transition: fill 250ms var(--timing-function);
 }
 
-.form-input:focus + .icon {
+.form-input:focus + .icon,
+.form-input:hover + .icon {
     fill: var(--accent-color);
 }
 
@@ -787,7 +789,8 @@ img {
     transition: border-color 250ms var(--timing-function);
 }
 
-.footer-form-input:focus {
+.footer-form-input:focus,
+.footer-form-input:hover {
     outline: none;
     border-color: var(--accent-color);
 }
@@ -819,8 +822,14 @@ img {
     color: #FFFFFF;
 
     background-color: var(--color-action-btn);
-}
 
+    transition: background-color 250ms var(--timing-function);
+}
+    
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: var(--color-action-btn);
+}
 .icon-send {
     position: absolute;
     right: 28px;
